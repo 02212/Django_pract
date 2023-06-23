@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Palindrome Solution</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="appBar text-center ">
+        <div class="jumbotron " style="padding-top:50px; padding-bottom:50px; background: rgb(0,212,255); background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,54,121,1) 51%, rgba(0,212,255,1) 100%);">
+            <h1>Eular problem 5 - Small multiple</h1>
+        </div>
+        <div style="background-color: aquamarine;">
+            <div class="mt-5">
+                <div class="text-center p-5">
+                    <p class="mt-5 fw-bold">2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.<br> What is the smallest positive number that is evenly divisible by all of the numbers from 1 to nth?
+                    </p>
+                    <form action="{%url 'test_app_answer'%}" method="post">
+                        {% csrf_token %}
+                        <input name="input" type="number" id="userInput" placeholder="Number of digits" /> <br>
+                        <button id="button_answer" type="submit" class="btn btn-primary mt-3" onclick="find_smallest_multiple()">
+                        Click for an answer...
+                    </button>
+                    </form>
+                    <br>
+                    <label>Answer will on the next page..</label><br>
+                    <label id="display"></label>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+        <script>
+        </script>
+
+</body>
+
+</html>
